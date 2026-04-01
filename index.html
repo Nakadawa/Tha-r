@@ -3,45 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Carte JDR</title>
-  <style>
-    body {
-      margin: 0;
-      background: #222;
-      color: white;
-      font-family: Arial;
-    }
-
-    #map-container {
-      position: relative;
-      width: 100%;
-    }
-
-    #map {
-      width: 100%;
-      display: block;
-    }
-
-    .marker {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      background: red;
-      color: white;
-      padding: 4px 8px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-  </style>
 </head>
 <body>
 
-<div id="map-container">
-  <img id="map" src="Maps/RUNA.jpg">
+<h1>Carte JDR</h1>
 
-  <!-- Exemple de point -->
-  <div class="marker" style="left:50%; top:40%;">
-    Ville
-  </div>
-</div>
+<img id="map" style="width:100%;">
+
+<script>
+fetch("thair.json")
+  .then(res => res.json())
+  .then(data => {
+    const country = data.countries[0];
+    document.getElementById("map").src = country.map;
+  });
+</script>
 
 </body>
 </html>
