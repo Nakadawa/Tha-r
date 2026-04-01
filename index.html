@@ -124,10 +124,38 @@ fetch("thair.json")
               </div>
             ` : ""}
 
+            ${city.history ? `
+              <div class="info-section">
+                <strong>Histoire :</strong>
+                <p>${city.history}</p>
+              </div>
+            ` : ""}
+
+            ${city.economy ? `
+              <div class="info-section">
+                <strong>Économie :</strong>
+                <p>${city.economy}</p>
+              </div>
+            ` : ""}
+
+            ${city.society ? `
+              <div class="info-section">
+                <strong>Société :</strong>
+                <p>${city.society}</p>
+              </div>
+            ` : ""}
+
             ${city.politics ? `
               <div class="info-section">
                 <strong>Pouvoir :</strong>
                 <p>${city.politics}</p>
+              </div>
+            ` : ""}
+
+            ${city.daily_life ? `
+              <div class="info-section">
+                <strong>Vie quotidienne :</strong>
+                <p>${city.daily_life}</p>
               </div>
             ` : ""}
 
