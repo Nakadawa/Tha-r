@@ -9,11 +9,18 @@
       "cities": [
         {
           "id": "pont",
-          "name": "Pont-aux-morts",
-          "description": "Grande ville humaine",
+  "name": "Pont-aux-morts",
+  "title": "La cité la plus peuplée du monde",
+  "description": "Pont-aux-morts est la cité la plus peuplée du monde.",
+  "history": "Elle tire son nom d'une ancienne tradition consistant à jeter les cadavres par-dessus les ponts directement dans le Lit-des-morts, la rivière traversant la ville.",
+  "economy": "Elle est connue pour être le grenier à grains du royaume : plus de 80% de la production de céréales en provient, alimentant ainsi le reste du royaume.",
+  "society": "La population reste extrêmement pauvre, la richesse n'étant détenue que par quelques propriétaires aisés.",
+  "politics": "Le gouverneur de la ville ne fait pas exception : il est largement arrosé de pots-de-vin par ces propriétaires afin de garder la population sous contrôle et de s'assurer que la situation ne change pas.",
+  "daily_life": "Cependant, les quelques marchés de la ville permettent aux habitants de vivre dignement dans cette pauvreté.",
+  "map": "Maps/pont-aux-morts.jpg",
           "position": {
-            "x": 52,
-            "y": 18
+            "x": 50,
+            "y": 10
           }
         },
         {
