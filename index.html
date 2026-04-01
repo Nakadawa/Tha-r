@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Carte JDR</title>
+  <title>Continent de Thair</title>
   <style>
     body {
       margin: 0;
@@ -14,6 +14,8 @@
     #map-container {
       position: relative;
       width: 70%;
+      overflow: auto;
+      background: #111;
     }
 
     #map {
@@ -29,6 +31,11 @@
       padding: 5px 10px;
       border-radius: 5px;
       cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .marker:hover {
+      background: crimson;
     }
 
     #info {
@@ -36,6 +43,33 @@
       padding: 20px;
       background: #222;
       color: white;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    #info h2 {
+      margin-top: 0;
+    }
+
+    #info h3 {
+      margin-bottom: 10px;
+      color: #d8c28f;
+    }
+
+    #info img {
+      width: 100%;
+      margin-top: 12px;
+      border-radius: 8px;
+      border: 2px solid #555;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .info-section {
+      margin-top: 12px;
+    }
+
+    .info-section strong {
+      color: #f0d68a;
     }
   </style>
 </head>
@@ -73,7 +107,38 @@ fetch("thair.json")
         marker.onclick = () => {
           document.getElementById("info").innerHTML = `
             <h2>${city.name}</h2>
-            <p>${city.description}</p>
+            ${city.title ? `<h3>${city.title}</h3>` : ""}
+            ${city.description ? `<p>${city.description}</p>` : ""}
+
+            ${city.districts?.south ? `
+              <div class="info-section">
+                <strong>Zone sud :</strong>
+                <p>${city.districts.south}</p>
+              </div>
+            ` : ""}
+
+            ${city.districts?.north ? `
+              <div class="info-section">
+                <strong>Zone nord :</strong>
+                <p>${city.districts.north}</p>
+              </div>
+            ` : ""}
+
+            ${city.politics ? `
+              <div class="info-section">
+                <strong>Pouvoir :</strong>
+                <p>${city.politics}</p>
+              </div>
+            ` : ""}
+
+            ${city.landmark ? `
+              <div class="info-section">
+                <strong>Particularité :</strong>
+                <p>${city.landmark}</p>
+              </div>
+            ` : ""}
+
+            ${city.map ? `<img src="${city.map}" alt="Carte de ${city.name}">` : ""}
           `;
         };
 
