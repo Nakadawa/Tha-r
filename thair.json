@@ -101,6 +101,27 @@
     "x": 22,
     "y": 50
   }
+},
+        {
+  "id": "lemenia",
+  "name": "Lemenia",
+  "title": "Fief druidique de l'Empire des Éternels",
+  "description": "La belle cité de Lemenia est la ville la plus à l'est de l'Empire des Éternels, haut lieu de la nature et de la magie.",
+
+  "nature": "Son chêne géant aux feuilles d'or et ses progénitures sont des merveilles uniques au monde, symboles vivants du lien entre les elfes et la nature.",
+
+  "religion": "Lemenia est une destination incontournable pour tous les enfants de la nature et de la magie, profondément ancrée dans les pratiques druidiques.",
+
+  "military": "La ville abrite le centre des Hauts-Rangers, une institution chargée de former les meilleurs archers de l'Empire.",
+
+  "politics": "La ville est dirigée d'une main de fer par les cinq consuls. Bien qu'ils écoutent les grandes familles nobles, ils accordent peu d'attention aux voyageurs et aux étrangers.",
+
+  "map": "Maps/Lemenia.jpg",
+
+  "position": {
+    "x": 80,
+    "y": 45
+  }
 }
       ]
     }
