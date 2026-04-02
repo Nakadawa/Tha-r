@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Continent de Thair</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       display: flex;
       height: 100vh;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
+      background: #111;
     }
 
     #map-container {
@@ -23,7 +25,6 @@
       display: block;
     }
 
-    /* 🔥 NOUVEAU STYLE MARKER */
     .marker {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -35,7 +36,7 @@
       border: 2px solid #c9a44c;
       font-weight: bold;
       box-shadow: 0 0 8px rgba(0,0,0,0.6);
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
       white-space: nowrap;
     }
 
@@ -47,36 +48,60 @@
 
     #info {
       width: 30%;
-      padding: 20px;
-      background: #222;
-      color: white;
+      padding: 25px;
+      background: #e2cfa0;
+      color: #2b1e12;
       overflow-y: auto;
       box-sizing: border-box;
+      font-family: Georgia, serif;
+      line-height: 1.7;
+      border-left: 8px solid #4a3215;
+      background-image: url("https://www.transparenttextures.com/patterns/old-paper.png");
+      box-shadow:
+        inset 0 0 40px rgba(0,0,0,0.35),
+        0 0 20px rgba(0,0,0,0.25);
     }
 
     #info h2 {
       margin-top: 0;
+      margin-bottom: 8px;
+      font-family: "Cinzel", serif;
+      color: #3b2a18;
+      font-size: 2rem;
     }
 
     #info h3 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: #6b4b2a;
+      font-family: "Cinzel", serif;
+      font-size: 1.15rem;
+    }
+
+    #info p {
+      margin-top: 0;
       margin-bottom: 10px;
-      color: #d8c28f;
     }
 
     #info img {
       width: 100%;
-      margin-top: 12px;
+      margin-top: 16px;
       border-radius: 8px;
-      border: 2px solid #555;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      border: 2px solid #7a5a32;
+      box-shadow: 0 0 12px rgba(0,0,0,0.35);
     }
 
     .info-section {
-      margin-top: 12px;
+      margin-top: 14px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(74, 50, 21, 0.25);
     }
 
     .info-section strong {
-      color: #f0d68a;
+      display: inline-block;
+      margin-bottom: 4px;
+      color: #6b4b2a;
+      font-family: "Cinzel", serif;
     }
   </style>
 </head>
@@ -104,39 +129,23 @@ fetch("thair.json")
     map.onload = () => {
       country.cities.forEach(city => {
         const marker = document.createElement("div");
-
         marker.className = "marker";
 
-        // 🔥 Ajout d’icônes dynamiques
-let icon = "📍";
+        let icon = "📍";
 
-// 👑 CAPITAL / POUVOIR
-if (["karan", "ekine", "fortma", "okren"].includes(city.id)) {
-  icon = "👑";
-}
-
-// 🌿 ELFES / NATURE
-else if (["lemenia", "sadia", "al-deora"].includes(city.id)) {
-  icon = "🌿";
-}
-
-// ⚒️ NAINS / ARTISANAT
-else if (["bavix", "var-lorhdir"].includes(city.id)) {
-  icon = "⚒️";
-}
-
-// ⚔️ ORCS / GUERRE
-else if (["firmak", "beletor"].includes(city.id)) {
-  icon = "⚔️";
-}
-
-// 🏠 HUMAINS
-else if (["pont", "port-sybur", "sombres-landes"].includes(city.id)) {
-  icon = "🏰";
-}
+        if (["karan", "ekine", "fortma", "okren"].includes(city.id)) {
+          icon = "👑";
+        } else if (["lemenia", "sadia", "al-deora"].includes(city.id)) {
+          icon = "🌿";
+        } else if (["bavix", "var-lorhdir"].includes(city.id)) {
+          icon = "⚒️";
+        } else if (["firmak", "beletor"].includes(city.id)) {
+          icon = "⚔️";
+        } else if (["pont", "port-sybur", "sombres-landes"].includes(city.id)) {
+          icon = "🏰";
+        }
 
         marker.innerHTML = `${icon} ${city.name}`;
-
         marker.style.left = city.position.x + "%";
         marker.style.top = city.position.y + "%";
 
