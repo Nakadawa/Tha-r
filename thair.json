@@ -242,6 +242,35 @@
     "x": 78,
     "y": 14
   }
+},
+        {
+  "id": "kleexle",
+  "name": "Kleexle",
+  "title": "Cité des Trois Niveaux",
+  "description": "Kleexle est une cité bâtie dans le lit asséché d’une rivière, organisée en plusieurs niveaux reflétant une société profondément inégalitaire.",
+
+  "districts": {
+    "high": "La haute-ville abrite les gobelins les plus riches ainsi que les infrastructures vitales de la cité. C’est le centre du pouvoir et du contrôle.",
+    "middle": "La ville-moyenne est peuplée de travailleurs, de pirates et de petites mains, tous cherchant à améliorer leur condition.",
+    "low": "La basse-ville est un dépotoir transformé en repaire criminel, où la loi n’existe pratiquement plus et où chacun lutte pour survivre."
+  },
+
+  "economy": "L’économie de Kleexle repose sur des activités douteuses, le commerce pirate et les jeux d’argent, avec une forte dépendance aux dettes et aux échanges illégaux.",
+
+  "crime": "La criminalité est omniprésente, particulièrement dans la basse-ville où les gangs et les trafics dominent.",
+
+  "landmark": "Le Palais des Jeux est le cœur de la cité, un lieu de divertissement et de ruine, détenu par le créateur du centre de réhabilitation des mauvais payeurs.",
+
+  "law": "Les dettes sont prises très au sérieux à Kleexle. Ceux qui ne peuvent pas payer sont envoyés dans des centres de réhabilitation, où les méthodes sont souvent brutales.",
+
+  "culture": "La vie à Kleexle est marquée par la survie, l’opportunisme et l’absence de morale. Chacun tente de s’élever, quel qu’en soit le prix.",
+
+  "map": "Maps/Kleexle.jpg",
+
+  "position": {
+    "x": 62,
+    "y": 5
+  }
 }
       ]
     }
