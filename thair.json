@@ -56,11 +56,11 @@
 
   "law": "L'université interdit toute entrée dans la forêt sans autorisation. Les individus s'y étant aventurés sont systématiquement emprisonnés par les Conjurés.",
 
-  "map": "Maps/sombres-landes.jpg",
+  "map": "Maps/Sombres-Landes.jpg",
 
   "position": {
-    "x": 65,
-    "y": 45
+    "x": 60,
+    "y": 30
   }
 }
       ]
