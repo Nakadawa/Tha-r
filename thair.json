@@ -371,6 +371,31 @@
     "x": 52,
     "y": 74
   }
+},
+        {
+  "id": "var-lorhdir",
+  "name": "Var Lorhdir",
+  "title": "Cœur Brassicole du Royaume de Kaz-Gar",
+  "description": "Var Lorhdir est la seconde place forte naine et le centre de production de la célèbre bière naine.",
+
+  "economy": "La ville repose sur une production massive de bière, exportée dans tout le monde connu. Les brasseries géantes constituent le cœur de son économie.",
+
+  "industry": "D'immenses brasseries dominent la cité, avec des cuves colossales et des procédés de fabrication jalousement gardés par les clans nains.",
+
+  "politics": "Plusieurs clans nains dirigent la ville, chacun contrôlant ses propres brasseries. Leur rivalité est encadrée par des traditions anciennes.",
+
+  "society": "Les travailleurs de Var Lorhdir sont bien rémunérés et respectés, créant une population stable et loyale.",
+
+  "culture": "La ville vit au rythme des festivals, des concours de brassage et des célébrations. Les tavernes y sont omniprésentes.",
+
+  "trade": "Var Lorhdir est un acteur majeur du commerce mondial, sa bière étant exportée dans tous les royaumes.",
+
+  "map": "Maps/Var-Lorhdir.jpg",
+
+  "position": {
+    "x": 16,
+    "y": 16
+  }
 }
       ]
     }
