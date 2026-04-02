@@ -215,6 +215,33 @@
     "x": 25,
     "y": 33
   }
+},
+        {
+  "id": "inkal",
+  "name": "Inkal",
+  "title": "Cité-État du Savoir et de l'Innovation",
+  "description": "Inkal est une cité-état indépendante, reconnue pour son organisation rigoureuse et son immense production de savoir.",
+
+  "politics": "La ville est dirigée par un conseil de savants et de mages élus par leurs pairs pour des mandats de dix ans, assurant une gouvernance fondée sur la compétence.",
+
+  "districts": {
+    "research": "Le district de la recherche regroupe les industries du nouveau ainsi que le centre de recherche et de continuité du savoir, cœur intellectuel de la cité.",
+    "civil": "Le district civil comprend le marché des producteurs et la guilde des commerces, garantissant la stabilité économique de la ville.",
+    "mages": "Le district des mages abrite le centre d’applications magiques, où la magie est étudiée, maîtrisée et appliquée."
+  },
+
+  "economy": "L’économie d’Inkal repose sur le savoir, l’innovation et les échanges commerciaux encadrés par la guilde des commerces.",
+
+  "culture": "La cité valorise la connaissance, l’expérimentation et la transmission du savoir, au détriment parfois des traditions plus anciennes.",
+
+  "external": "Aux abords d’Inkal se trouve un port gobelin, seule ouverture maritime de la ville, tolérée malgré l’indépendance souvent imprévisible de ses occupants.",
+
+  "map": "Maps/Inkal.jpg",
+
+  "position": {
+    "x": 78,
+    "y": 14
+  }
 }
       ]
     }
