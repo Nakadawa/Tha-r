@@ -169,6 +169,29 @@
     "x": 45,
     "y": 70
   }
+},
+        {
+  "id": "bavix",
+  "name": "Bavix",
+  "title": "Cité frontalière disputée",
+  "description": "La « cité » de Bavix est l’un des lieux les plus pauvres et instables du continent, constamment disputé entre les Elfes et les Nains.",
+
+  "history": "Depuis des siècles, Bavix change régulièrement de main, passant sous domination elfique puis naine, sans jamais connaître de stabilité durable.",
+
+  "economy": "La ville tente tant bien que mal de produire de la bière et du fer, mais ces productions sont de qualité médiocre, faute de ressources stables et d’un savoir-faire constant.",
+
+  "society": "La population vit dans une grande précarité, marquée par les conflits, les changements de pouvoir et l’absence d’autorité durable.",
+
+  "religion": "Les habitants nains vouent un culte fervent à Philtis, qu’ils considèrent comme le saint gardien de la ville, protecteur dans ce chaos permanent.",
+
+  "politics": "L’instabilité politique est totale, aucun pouvoir ne parvenant à s’imposer durablement. Bavix est davantage un territoire contesté qu’une véritable cité organisée.",
+
+  "map": "Maps/Bavix.jpg",
+
+  "position": {
+    "x": 40,
+    "y": 65
+  }
 }
       ]
     }
