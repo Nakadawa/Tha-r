@@ -108,12 +108,32 @@ fetch("thair.json")
         marker.className = "marker";
 
         // 🔥 Ajout d’icônes dynamiques
-        let icon = "📍";
-        if (city.id.includes("port")) icon = "⚓";
-        else if (city.id.includes("karan")) icon = "👑";
-        else if (city.id.includes("fort") || city.id.includes("var")) icon = "⚒️";
-        else if (city.id.includes("sombres")) icon = "🔥";
-        else if (city.id.includes("lem")) icon = "🌿";
+let icon = "📍";
+
+// 👑 CAPITAL / POUVOIR
+if (["karan", "ekine", "fortma", "okren"].includes(city.id)) {
+  icon = "👑";
+}
+
+// 🌿 ELFES / NATURE
+else if (["lemenia", "sadia", "al'deora"].includes(city.id)) {
+  icon = "🌿";
+}
+
+// ⚒️ NAINS / ARTISANAT
+else if (["bavix", "var lorhdir"].includes(city.id)) {
+  icon = "⚒️";
+}
+
+// ⚔️ ORCS / GUERRE
+else if (["firmak", "beletor"].includes(city.id)) {
+  icon = "⚔️";
+}
+
+// 🏠 HUMAINS
+else if (["pont", "port-sybur", "sombres-landes"].includes(city.id)) {
+  icon = "🏰";
+}
 
         marker.innerHTML = `${icon} ${city.name}`;
 
