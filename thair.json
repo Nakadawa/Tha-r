@@ -298,6 +298,31 @@
     "x": 40,
     "y": 76
   }
+},
+        {
+  "id": "okren",
+  "name": "Okren",
+  "title": "Capitale du Grand Clan de Kragmar",
+  "description": "Okren est la capitale des Orcs, centre de pouvoir du Grand Clan de Kragmar et symbole de leur force et de leur unité.",
+
+  "politics": "La ville est dirigée par le Chef du Clan, dont l'autorité repose sur la force, les victoires et la capacité à unir les clans orcs sous une même bannière.",
+
+  "military": "Okren est une forteresse naturelle construite autour d’un fleuve, avec des ponts contrôlés et des murailles puissantes. Les guerriers orcs y sont entraînés en permanence.",
+
+  "society": "Les Orcs vivent selon des valeurs de force, d’honneur et de loyauté envers leur clan. Les rivalités internes sont fréquentes mais toujours contenues par l’autorité du chef.",
+
+  "religion": "Les druides orcs jouent un rôle central, utilisant la puissance brute de la nature pour renforcer les guerriers et préparer les conflits à venir.",
+
+  "dark_power": "Certains orcs pactisent avec des forces démoniaques afin d'accroître leur puissance, devenant des bêtes incontrôlables sur le champ de bataille.",
+
+  "structure": "La ville est construite autour d’un réseau de rivières et d’îles fortifiées, avec une forteresse centrale où réside le chef du clan.",
+
+  "map": "Maps/Okren.jpg",
+
+  "position": {
+    "x": 50,
+    "y": 55
+  }
 }
       ]
     }
