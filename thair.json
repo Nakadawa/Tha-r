@@ -119,8 +119,8 @@
   "map": "Maps/Lemenia.jpg",
 
   "position": {
-    "x": 40,
-    "y": 35
+    "x": 35,
+    "y": 30
   }
 },
         {
@@ -143,8 +143,8 @@
   "map": "Maps/Al'Deora.jpg",
 
   "position": {
-    "x": 35,
-    "y": 52
+    "x": 30,
+    "y": 42
   }
 }
       ]
