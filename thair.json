@@ -40,6 +40,29 @@
             "y": 23
           }
         }
+        {
+  "id": "sombres-landes",
+  "name": "Sombres-Landes",
+  "title": "Scierie du Royaume de Brigbanie",
+  "description": "Sombres-Landes est connue comme la scierie principale du Royaume de Brigbanie.",
+  
+  "reputation": "Également appelée « la cité damnée », elle tire ce nom de sa proximité avec les monts noirs, considérés comme une porte des enfers sur terre.",
+
+  "education": "La ville abrite une université conjointe des arts sombres, largement critiquée par la population qui l'accuse d'enlever des enfants pour mener des expériences ou les transformer en Conjurés.",
+
+  "military": "Les Conjurés sont une garde magique anti-démon créée par l'université. Leurs armures et armes sont conçues pour éliminer rapidement les démons issus des monts noirs. Ils assurent également le maintien de l'ordre dans la ville.",
+
+  "mystery": "Aux abords de la cité se trouve la forêt des oubliés, un lieu étrange dont peu de personnes reviennent. Ceux qui en ressortent semblent changés, comme remplacés.",
+
+  "law": "L'université interdit toute entrée dans la forêt sans autorisation. Les individus s'y étant aventurés sont systématiquement emprisonnés par les Conjurés.",
+
+  "map": "Maps/sombres-landes.jpg",
+
+  "position": {
+    "x": 65,
+    "y": 45
+  }
+}
       ]
     }
   ]
