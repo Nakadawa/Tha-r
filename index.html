@@ -200,6 +200,26 @@ fetch("thair.json")
                 <p>${city.landmark}</p>
               </div>
             ` : ""}
+            ${city.culture ? `
+  <div class="info-section">
+    <strong>Culture :</strong>
+    <p>${city.culture}</p>
+  </div>
+` : ""}
+
+${city.entertainment ? `
+  <div class="info-section">
+    <strong>Divertissement :</strong>
+    <p>${city.entertainment}</p>
+  </div>
+` : ""}
+
+${city.religion ? `
+  <div class="info-section">
+    <strong>Religion :</strong>
+    <p>${city.religion}</p>
+  </div>
+` : ""}
 
             ${city.map ? `<img src="${city.map}" alt="Carte de ${city.name}">` : ""}
           `;
