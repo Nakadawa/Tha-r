@@ -220,6 +220,12 @@ ${city.religion ? `
     <p>${city.religion}</p>
   </div>
 ` : ""}
+${city.nature ? `
+  <div class="info-section">
+    <strong>Nature :</strong>
+    <p>${city.nature}</p>
+  </div>
+` : ""}
 
             ${city.map ? `<img src="${city.map}" alt="Carte de ${city.name}">` : ""}
           `;
